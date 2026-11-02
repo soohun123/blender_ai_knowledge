@@ -1,0 +1,8 @@
+{"id": "blender-qa-001", "topic": "keyframe", "question": "Blender에서 위치 키프레임을 Python으로 추가하려면?", "answer": "오브젝트의 location 값을 설정한 뒤 obj.keyframe_insert(data_path=\"location\", frame=프레임번호)를 호출한다.", "source": "docs/02-keyframes-fcurves.md", "verified": false}
+{"id": "blender-qa-002", "topic": "rigging", "question": "Armature에 메시를 자동 가중치로 연결하는 방법은?", "answer": "메시를 먼저 선택하고 Armature를 마지막에 활성 선택한 뒤 Ctrl+P → With Automatic Weights를 사용한다.", "source": "docs/03-rigging.md", "verified": false}
+{"id": "blender-qa-003", "topic": "animation", "question": "캐릭터 뼈 회전을 기록하는 방법은?", "answer": "pose.bones에서 뼈를 가져와 rotation_mode를 설정하고 rotation_euler에 값을 넣은 뒤 keyframe_insert를 호출한다.", "source": "docs/04-character-animation.md", "verified": false}
+{"id": "blender-qa-004", "topic": "render", "question": "30fps로 3초를 렌더링하려면?", "answer": "프레임 1~90을 사용하고 scene.render.fps=30으로 설정한다.", "source": "docs/05-camera-render.md", "verified": false}
+{"id": "blender-qa-005", "topic": "export", "question": "Unity로 애니메이션을 옮기려면?", "answer": "FBX로 메시와 Armature, 애니메이션을 내보내고 Unity에서 Rig와 Animation 임포트 설정을 확인한다.", "source": "docs/06-export.md", "verified": false}
+{"id": "blender-qa-006", "topic": "debug", "question": "MCP 핸드셰이크 타임아웃이 발생하면?", "answer": "Blender 애드온/서버 실행 여부, 포트, 클라이언트 설정과 로그를 확인한다. 연결 성공 전에는 씬 조작을 주장하지 않는다.", "source": "docs/07-troubleshooting.md", "verified": false}
+{"id": "blender-qa-007", "topic": "fcurve", "question": "LINEAR 보간은 어떤 움직임인가?", "answer": "두 키프레임 값 사이를 선형으로 보간한다.", "source": "docs/02-keyframes-fcurves.md", "verified": false}
+{"id": "blender-qa-008", "topic": "safety", "question": "AI가 Blender 씬 전체를 삭제해도 되나?", "answer": "사용자의 명시적 요청 없이 씬 전체 삭제나 덮어쓰기를 하지 않는다.", "source": "AGENTS.md", "verified": false}
